@@ -4,7 +4,7 @@ import Button from './Button';
 function InitialButtons() {
   return (
     <div className='w-full flex justify-center items-center'>
-      <div className='grid grid-cols-2 gap-3'>
+      <div className='grid grid-cols-1 gap-3'>
         <Button children='Espalda' />
         <Button children='Pecho' />
         <Button children='Biceps' />
