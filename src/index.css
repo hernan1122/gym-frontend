@@ -6,6 +6,10 @@ body {
   background: #000;
   font-family: 'Ubuntu', sans-serif;
 }
-.home-title {
-  margin-top: 154px;
+.title-app {
+  margin-top: 138px;
+}
+.logo-app {
+  top: 118px;
+  left: 73px;
 }
