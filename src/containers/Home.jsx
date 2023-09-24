@@ -7,7 +7,9 @@ function Home() {
   return (
     <div className='w-full h-screen flex flex-col items-center'>
       <Header />
-      <InitialButtons />
+      <div className='mt-32'>
+        <InitialButtons />
+      </div>
     </div>
   );
 }
