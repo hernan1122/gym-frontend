@@ -16,21 +16,26 @@ import logoApp12 from '../images/levantar.png'
 import logoApp13 from '../images/ejercicio-2.png'
 
 function Header() {
-  const [currentLogo, setCurrentLogo] = useState(logoApp1)
+  const logos = [
+    logoApp1, logoApp2, logoApp3, logoApp4, logoApp5,
+    logoApp6, logoApp7, logoApp8, logoApp9, logoApp10,
+    logoApp11, logoApp12, logoApp13
+  ]
+
+  const [currentLogo, setCurrentLogo] = useState(logoApp3)
 
   useEffect(() => {
     const changeLogo = () => {
-      const logos = [logoApp1, logoApp2, logoApp3, logoApp4, logoApp5, logoApp6, logoApp7, logoApp8, logoApp9, logoApp10, logoApp11, logoApp12, logoApp13]
-      const nextIndex = (logos.indexOf(currentLogo) + 1) % logos.length
-      setCurrentLogo(logos[nextIndex])
+      const randomIndex = Math.floor(Math.random() * logos.length)
+      setCurrentLogo(logos[randomIndex])
     }
 
-    const intervalId = setInterval(changeLogo, 5000)
+    const intervalId = setInterval(changeLogo, 4000)
 
     return () => {
       clearInterval(intervalId)
     }
-  }, [currentLogo])
+  }, [])
 
   const textStyle = {
     WebkitTextStroke: '1.2px black',
