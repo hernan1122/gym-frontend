@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 body {
-  background: #000;
+  background: #222;
   font-family: 'Ubuntu', sans-serif;
+}
+h2 {
+  color: #222;
+}
+.hola {
+  background: #222;
 }
 /* Header */
 .skewed {
