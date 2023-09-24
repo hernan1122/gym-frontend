@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Button({children}) {
+function Button({children, to}) {
   return (
-    <button className='w-64 h-12 text-lg text-black font-bold rounded-lg bg-yellow-500 transition-all duration-300'>
+    <Link to={to} className='w-64 h-12 text-lg text-black font-bold flex justify-center items-center rounded-lg bg-yellow-500 transition-all duration-300'>
       {children}
-    </button>
+    </Link>
   );
 }
 
