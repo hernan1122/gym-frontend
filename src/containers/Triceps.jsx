@@ -1,9 +1,13 @@
 import React from 'react';
+import HeaderItems from '../components/HeaderItems.jsx';
 
 function Triceps() {
   return (
-    <div>
-      
+    <div className='pt-5'>
+      <HeaderItems
+        nameBorder='Tr'
+        nameSolid='iceps'
+      />
     </div>
   );
 }

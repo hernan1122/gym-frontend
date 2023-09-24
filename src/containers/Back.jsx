@@ -1,7 +1,7 @@
 import React from 'react';
 import data_back from '../contants/back.js'
-import DataCard from '../components/DataCard.jsx';
 import HeaderItems from '../components/HeaderItems.jsx';
+import DataCard from '../components/DataCard.jsx';
 
 function Back() {
 
