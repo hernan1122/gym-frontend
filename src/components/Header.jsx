@@ -13,7 +13,7 @@ function Header() {
   return (
     <>
       <div className='w-full h-32 absolute top-28 bg-yellow-500'></div>
-      <div className='w-40 h-40 absolute top-24 left-14 rounded-lg transform rotate-45 bg-yellow-600'></div>
+      <div className='w-40 h-40 absolute top-24 left-16 rounded-lg transform rotate-45 bg-yellow-600'></div>
       <img className='logo-app w-28 absolute' src={logoApp} alt="Logo de la app" />
       <div className='title-app mb-32 ml-44 flex flex-col items-end z-10'>
         <h2 className='text-2xl text-black font-bold'>Seamos</h2>
